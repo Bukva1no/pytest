@@ -15,4 +15,4 @@ jobs:
           pip install pytest-playwright
           playwright install --with-deps
       - name: Run tests
-        run: pytest
+        run: pytest --base-url https://www.saucedemo.com
