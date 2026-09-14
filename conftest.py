@@ -27,5 +27,5 @@ class InventoryPage:
     def __init__(self, page):
         self.page = page
 
-    def get_product_count(self):
-        return self.page.locator(".inventory_item").count()
+    def products(self):
+        return self.page.locator(".inventory_item")
